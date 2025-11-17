@@ -400,7 +400,7 @@ if(info){
 
 });
 
-/* ---------- registration & login ---------- */
+/* ---------- registration & login ---------- *
 /* ==========================================================
    Lumé Décor | User Authentication & Cart Logic
    Handles registration, login, session, logout + homepage access protection
@@ -588,7 +588,7 @@ function updateSummary(){
   const tax = (subtotal - discountVal) * 0.10; // 10% tax
   const total = subtotal - discountVal + tax;
 
-  // update DOM elements with these ids if present
+  
   const elSub = document.getElementById('summary-subtotal');
   const elDisc = document.getElementById('summary-discount');
   const elTax = document.getElementById('summary-tax');
@@ -707,7 +707,7 @@ function renderInvoice(){
       <div class="invoice-header">
         <div>
           <h2 style="margin:0;color:var(--accent)">Lumé Décor</h2>
-          <div>Reflect your vibe — handcrafted décor for modern spaces.</div>
+          <div>Illuminate your world with LuméDécor.Your vibe. Your light. Your room</div>
         </div>
         <div class="invoice-right">
           <div><strong>Invoice:</strong> ${invoice.invoiceId}</div>
@@ -797,3 +797,4 @@ document.addEventListener('DOMContentLoaded', updateCartCount);
     });
   });
 }
+
